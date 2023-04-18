@@ -16,7 +16,7 @@ def calculate_enterprise_value(ticker: str, apikey: str) -> Decimal:
     # Assume FCF will grow at a constant rate over the next five years
     fcf_growth_rate = 0.12 
     fcf_estimates = [fcf * (1 + fcf_growth_rate)**n for n in range(1, 6)]
-    fcf_dict = {f"n{n+1}": fcf for n, fcf in enumerate(fcf_estimates)}
+    fcf_dict = {f"YEAR{n+1}": fcf for n, fcf in enumerate(fcf_estimates)}
     
     # Discount the future cash flows back to their present value WACC
     discount_rate = 0.10

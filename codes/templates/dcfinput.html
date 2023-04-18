@@ -1,16 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Quick DCF Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Responsive Design</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Quick DCF Calculator</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Zide Yang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">What is DCF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/quickdcfcal/">Quick DCF generation and relative file download </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">excel DCF Template</a>
+        </li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Step by Step Tutorial</a>
+		  </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <style>
+	body {
+		background-color: #f8f9fa;
+		color: #495057;
+		font-size: 1.1rem;
+		font-family: "Roboto", sans-serif;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	form {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	label {
+		font-weight: 500;
+		margin-bottom: 0.5rem;
+	}
+
+	input[type="text"], input[type="password"] {
+		background-color: #fff;
+		border: none;
+		border-radius: 0.25rem;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+		color: #495057;
+		font-size: 1rem;
+		height: 2.5rem;
+		margin-bottom: 1rem;
+		padding: 0.5rem;
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		background-color: #007bff;
+		border: none;
+		border-radius: 0.25rem;
+		color: #fff;
+		cursor: pointer;
+		font-size: 1rem;
+		font-weight: 500;
+		height: 2.5rem;
+		transition: background-color 0.2s ease-in-out;
+		width: 100%;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #0069d9;
+	}
+
+	.btn {
+		margin: 0.5rem;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<h1 class="text-center">DCF Calculator</h1>
 	<form method="POST" action="/quickdcfcal">
-		<label for="ticker">Ticker:</label>
-		<input type="text" id="ticker" name="ticker"><br><br>
-		<label for="apikey">API Key:</label>
-		<input type="text" id="apikey" name="apikey"><br><br>
-		<input type="submit" value="Submit">
+		<div class="form-group">
+			<label for="ticker"><i class="fas fa-tags"></i> Ticker:</label>
+			<input type="text" class="form-control" id="ticker" name="ticker" placeholder="Enter ticker symbol">
+		</div>
+		<div class="form-group">
+			<label for="apikey"><i class="fas fa-key"></i> API Key:</label>
+			<input type="password" class="form-control" id="apikey" name="apikey" placeholder="Enter API key">
+			<small>You could use my API key for Free Trial Apikey="3178e48c4517a7c30aa49ccbadef2582"</small>
+		</div>
+		<input type="submit" class="btn btn-primary" value="Calculate">
 	</form>
+</div>
+	
+
+
+
+  <!-- jQuery, Popper, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+			  
+			  
