@@ -32,6 +32,18 @@ def quickdcfcal():
 
     else:
         return render_template("dcfinput.html")
+@app.route('/whatisdcf/')
+def whatisdcf():
+    return render_template("whatisdcf.html")
+
+@app.route('/exceltemplate/')
+def exceltemplate():
+    return render_template("exceltemplate.html")
+
+@app.route('/tutorial/')
+def tutorial():
+    return render_template("tutorial.html")
+
 
 # @app.route('/dcfresult/', methods=['POST'])
 # def dcfresult():

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>What is DCF?</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Zide Yang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/whatisdcf/">What is DCF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/quickdcfcal/">Quick DCF generation and relative file download </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/exceltemplate/">excel DCF Template</a>
+        </li>
+		<li class="nav-item">
+			<a class="nav-link" href="/tutorial/">Step by Step Tutorial</a>
+		  </li>
+      </ul>
+    </div>
+  </nav>
+
+  <style>
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    ol {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    
+<h1>DCF Valuation Method Steps</h1>
+<p>Discounted Cash Flow (DCF) is a valuation method that uses free cash flow projections, a discount rate, and a growth rate to find the present value estimate of a potential investment. Essentially, it is a way to value a company based on cash generated from operation, taking into account all major expenses. In this post, we will discuss the mechanics of DCF step by step, starting from the point where all the needed tools and data for such analysis as outlined in my valuation preparation post have been gathered.</p>
+<h2>Steps:</h2>
+<ol>
+    <li>Identify extraordinary, unusual, non-recurring items from the target’s 10-Ks and 10-Qs.</li>
+    <li>Add back / remove the extraordinary, unusual, non-recurring items to historical income statement to normalize the statement.</li>
+    <li>Derive proforma assumptions from the target’s normalized historical statements.</li>
+    <li>Decide on a forecast horizon and whether a 1-stage or 2-stage growth is appropriate.</li>
+    <li>Build proforma income statement and balance sheet.</li>
+    <li>Derive Free Cash Flow to Firm (FCFF).</li>
+    <li>Calculate cost of debt, cost of equity, and weighted average cost of capital (WACC).</li>
+    <li>Calculate the long-term free cash flow growth rate, the Terminal Value, and the Value of Operation.</li>
+    <li>Determine the current value of non-operating assets (cash) and the Enterprise Value.</li>
+    <li>Determine the year-by-year future non-equity claims from the latest 10-K, especially those that will occur during the forecast horizon, and their combined present value.</li>
+    <li>Calculate the Equity Value and the per-share Equity Value - this number would serve as the base case share price valuation.</li>
+    <li>Perform sensitivity / scenario analysis using Monte Carlo analysis.</li>
+</ol>
+<p>For more information, you could check <a href="https://www.francineway.com/blog/2017/7/5/ma-blog-11-buy-side-acquisition-ssxdy-e36la-79pfa">https://www.francineway.com/blog/2017/7/5/ma-blog-11-buy-side-acquisition-ssxdy-e36la-79pfa</a>.</p>
+</div>
+</body>
+</html>
