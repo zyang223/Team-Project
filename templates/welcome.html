@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Responsive Design</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Zide Yang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/whatisdcf/">What is DCF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/quickdcfcal/">Quick DCF generation and relative file download </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/exceltemplate/">excel DCF Template</a>
+        </li>
+		<li class="nav-item">
+			<a class="nav-link" href="/tutorial/">Step by Step Tutorial</a>
+		  </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <style>
+	.container {
+	  font-family: Arial, sans-serif;
+	  font-size: 18px;
+	  line-height: 1.5;
+	}
+	
+	h1 {
+	  font-size: 36px;
+	}
+	
+	p {
+	  font-size: 20px;
+	}
+	
+	b {
+	  font-weight: bold;
+	}
+	
+	img {
+	  max-width: 100%;
+	  height: auto;
+	  display: block;
+	  margin: auto;
+	}
+	
+	.contact {
+	  font-size: 16px;
+	  font-style: italic;
+	}
+	</style>
+	
+	<div class="container">
+	  <h1>Hello, ALL!</h1>
+	  <br>
+	  <br>
+	  <p>This is a final project created by <b>Zide Yang</b>. The <b>objective</b> of this DCF instruction website is <b>to help college students reduce their suffering from doing Discounting Cash Flow model</b>. I know it is very hard while you haven't dealt with it before and it is quite annoying for you to do the whole model and find information from different websites that takes several hours. Therefore, I am creating this website and tutorial to help you release your stress and go through the whole process with ease.</p>
+	  <br>
+		<img src=" {{ url_for('static', filename='dcf_cosmics.png') }}"> 
+	  <p class="contact">Feel free to reach out to me for editing and improving the website:</p>
+	  <p class="contact">Email: zyang2@babson.edu</p>
+	  
+	  <br><br><br>
+	</div>
+	
+  <!-- jQuery, Popper, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
