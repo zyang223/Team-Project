@@ -2,7 +2,7 @@
   
   **DCF WEB App Produced by Zide Yang**
 
-  <span style="color:red">**Important update, my API's authorization for the download the finacial data in the quickexcel template seemed get banned, please try to use yours api from finicial model www.financialmodelingprep.com to sign up a new api Thank you!**</span> But you could still try Ticker ADSK to test the function.S
+  <span style="color:red">**Important update, my API's authorization for the download the finacial data in the quickexcel template seemed get banned, please try to use yours api from finicial model www.financialmodelingprep.com to sign up a new api Thank you!**</span> But you could still try Ticker ADSK to test the function.
 
   " Hi all, this is a final project created by Zide Yang. The objective of this DCF instruction website is to  help college students  reducing their suffer from  doing Discounting Cash Flow model. I know it is very hard while you haven't deal it before and it is quite annoying for you to do the whole model and finding information from different websites that takes several hours. Therefore, I am creating this website and tutorial to help you to release your stress and go through the whole process with you.
 
