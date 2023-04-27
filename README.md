@@ -49,7 +49,9 @@
   <br>
 
   **You could run the app.py enter http://127.0.0.1:5000/home in your browser to use the app.**
+  ![dif1](static/homepage.png)
 
+  
   <br>
   <br>
   The website have 5 main pages and each of them contains different information:
