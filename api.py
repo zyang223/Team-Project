@@ -88,11 +88,10 @@ def download_xlsx(ticker, apikey):
         df_stock_price_today.to_excel(writer, sheet_name="Stock Price Today")
 
 
-
 if __name__ == "__main__":
     """quick test, to use run data.py directly"""
 
-    ticker = "ADSK"
+    ticker = "AAPL"
     apikey = "3178e48c4517a7c30aa49ccbadef2582"
 
     # print(f"INCOME STATEMENT SECTION\n")
