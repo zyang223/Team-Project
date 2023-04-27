@@ -38,3 +38,42 @@
       </ul>
     </div>
   </nav>
+
+  <div class="container mt-3">
+    <h1>Excel DCF Template</h1>
+    <p>Download the Excel DCF template to get started:</p>
+    <p>
+      The following model_template in Excel has three different models: 
+    </p>
+    <ul>
+      <li>
+        The first model is a typical <b>DCF model</b> with switches on street-base, conservative case, and optimistic case. 
+        For using the model, you need to make your own hypothesis or find out the relative financial data from Bloomberg or Capital IQ or the company's financial statement.
+        <br>
+        <img src="{{ url_for('static', filename='screenshottemplatedcf.png') }}" alt="Screenshot of the DCF template">
+      </li>
+      
+        <br>
+        <br>
+        <li>
+        The second model is a <b>relative evaluation</b> for the comparable companies. It uses multiples and ratios of trailing and leading to account for a company's value.
+        You have to be very careful in selecting the peer companies (using the screen function) or you could also adjust the percentage on variance to get a rational result.
+        <br>
+        <img src="{{ url_for('static', filename='screenshotrelative.png') }}" alt="Screenshot of the relative evaluation model">
+      </li>
+      <br>
+      <br>
+      <li>
+        The third model is a <b>benchmark for the relative evaluation</b>. It provides you with insight and visualization of where your target companies stand among the peer and comparable companies.
+        <br>
+        <img src="{{ url_for('static', filename='screenshotbenchmark.png') }}" alt="Screenshot of the benchmark model">
+      </li>
+    </ul>
+    <br>
+    <a href="{{ url_for('download_template') }}" class="btn btn-primary">Download Template</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNSBmJm" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZ

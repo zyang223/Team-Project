@@ -53,7 +53,12 @@ def whatisdcf():
 
 @app.route('/exceltemplate/')
 def exceltemplate():
-    return render_template("exceltemplate.html")
+    return render_template('exceltemplate.html')
+
+@app.route('/download_template/')
+def download_template():
+    filename = 'downloadtemplate.xlsx'
+    return send_file(filename, as_attachment=True)
 
 @app.route('/tutorial/')
 def tutorial():
